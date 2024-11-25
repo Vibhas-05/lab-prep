@@ -17,6 +17,11 @@ padding: 10px; margin-bottom: 15px; font-size: 18px;"/>
 10px; background-color: #28a745; color: white; border-radius: 3px; fontsize: 18px;">SUBMIT</button>
  </form>
  <script src="script.js">
+document.getElementById("button").addEventListener('click',()=>{
+ str = document.getElementById("name").value;
+ if(str.length>25)alert("Name cannot be more than 25 characters");
+ alert("You have successfully registered");
+})
 </script>
 </body>
 </html>
